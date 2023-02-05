@@ -1,0 +1,75 @@
+/* ./src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    html {
+        font-family: Inter, system-ui, sans-serif;
+    }
+}
+
+body {
+    @apply bg-gray-900 text-white;
+    background-image: url('./img/background.png');
+    background-size: cover;
+}
+
+@layer components {
+    .btn {
+        @apply text-white font-bold py-2 px-4 rounded-2xl bg-[#9598bb91] backdrop-blur-lg;
+    }
+    .card {
+        @apply p-3 rounded-2xl bg-slate-500 shadow-md h-full;
+        background: linear-gradient(48deg, rgb(36 59 89) 0%, rgb(60 73 93) 100%);
+    }
+    .script-text {
+        @apply w-full text-[#c6c8c6];
+    }
+    .script-num {
+        @apply w-3 text-[#717373] px-6 text-center;
+    }
+}
+
+.card:hover > .folder > .subfolder {
+    transform: rotate(-5deg) translateX(-0.5rem);
+    box-shadow: 0 0px 20px -10px rgb(0 0 0)
+}
+
+.card:hover > .folder > .cover {
+    transform: rotate(-9deg) translateX(-1.5rem);
+    box-shadow: 0 0px 20px -10px rgb(0 0 0)
+}
+
+.card:hover {
+    transform: scale(1.015);
+}
+
+
+.typewriter h1 {
+    @apply overflow-hidden whitespace-nowrap;
+    border-right: .15em solid; /* The typwriter cursor */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation:
+            typing 1.5s steps(13, end),
+            blink-caret .55s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+.code-line {
+    grid-template-columns: min-content auto;
+    grid-template-rows: min-content auto;
+}
