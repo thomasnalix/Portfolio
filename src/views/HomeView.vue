@@ -1,15 +1,15 @@
 <template>
   <NavBar />
-  <div class="flex flex-col items-center w-3/4 mx-auto">
+  <div class="flex flex-col items-center duration-100 sm:w-3/4 w-11/12 mx-auto">
     <div class="h-screen flex flex-col items-center justify-evenly gap-16">
       <div class="flex flex-col gap-14 items-center">
         <div class="flex flex-col gap-4">
-          <h1 class="font-bold text-8xl text-center">Hello, I'm</h1>
+          <h1 class="font-bold duration-100 sm:text-8xl text-6xl text-center">Hello, I'm</h1>
           <div class="typewriter">
-            <h1 class="font-bold text-8xl text-center">Thomas Nalix</h1>
+            <h1 class="font-bold duration-100 sm:text-8xl text-4xl text-center">Thomas Nalix</h1>
           </div>
         </div>
-        <h2 class="text-2xl text-gray-200">I'm a student in computer science.</h2>
+        <h2 class="sm:text-2xl duration-100 text-center text-xl text-gray-200">I'm a student in computer science.</h2>
       </div>
       <div class="flex items-end">
         <svg width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">

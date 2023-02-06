@@ -1,10 +1,10 @@
 <template>
   <NavBar />
   <template v-if="projectDesc">
-    <div class="flex flex-col gap-10 flex w-3/4 mx-auto">
+    <div class="flex flex-col gap-10 flex duration-100 sm:w-3/4 w-11/12 mx-auto">
       <h1 class="text-6xl font-bold text-center mb-10 mt-10">{{ project.title }}</h1>
       <ScriptBox title="metadata.ts">
-        <div class="grid code-line mt-10 text-lg font-console">
+        <div class="grid code-line mt-10 text-lg break-all min-[460px]:break-normal font-console">
           <p class="script-num">1</p>
           <p class="script-text">Title: {{ project.title }}</p>
           <p class="script-num">2</p>

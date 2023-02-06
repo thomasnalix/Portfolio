@@ -1,6 +1,8 @@
 <template>
   <NavBar />
-  <h1>Contact me</h1>
+  <div class="duration-100 sm:w-3/4 w-11/12">
+    <h1>Contact me</h1>
+  </div>
   <FooterBox />
 </template>
 
