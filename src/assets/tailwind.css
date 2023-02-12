@@ -7,6 +7,7 @@
 @layer base {
     html {
         font-family: Inter, system-ui, sans-serif;
+        scroll-behavior: smooth;
     }
 }
 
@@ -29,6 +30,9 @@ body {
     }
     .script-num {
         @apply w-3 text-[#717373] px-6 text-center;
+    }
+    .field {
+        @apply rounded-xl p-4 text-black
     }
 }
 

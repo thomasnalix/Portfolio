@@ -3,7 +3,7 @@
   <template v-if="projectDesc">
     <div class="flex flex-col gap-10 flex duration-100 sm:w-3/4 w-11/12 mx-auto">
       <h1 class="text-6xl font-bold text-center mb-10 mt-10">{{ project.title }}</h1>
-      <ScriptBox title="metadata.ts">
+      <ScriptBox title="metadata.txt">
         <div class="grid code-line mt-10 text-lg break-all min-[460px]:break-normal font-console">
           <p class="script-num">1</p>
           <p class="script-text">Title: {{ project.title }}</p>
@@ -15,14 +15,9 @@
           <p></p>
           <p class="script-num">5</p>
           <p class="script-text">Description: {{ project.description }}</p>
-          <p class="script-num">6</p>
-          <p></p>
-          <p class="script-num">7</p>
-          <p class="script-text">Image:</p>
-          <p class="script-num">8</p>
-          <img class="w-96 rounded-xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="project image">
         </div>
       </ScriptBox>
+      <img class="w-96 rounded-xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="project image">
       <h1 class="text-6xl font-bold text-center mb-10 mt-10">Description</h1>
       <p>{{ projectDesc.description }}</p>
     </div>

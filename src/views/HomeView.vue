@@ -12,14 +12,15 @@
         <h2 class="sm:text-2xl duration-100 text-center text-xl text-gray-200">I'm a student in computer science.</h2>
       </div>
       <div class="flex items-end">
-        <svg width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M29 25L19 35L9 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M37 1L19 19L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <a class="hover:scale-105 duration-100" id="readme" href="#readme">
+          <svg width="38" height="41" viewBox="0 0 38 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M29 25L19 35L9 25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M37 1L19 19L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
       </div>
     </div>
-
-    <ScriptBox title="readme.ts">
+    <ScriptBox title="readme.txt">
       <div class="grid code-line mt-10 text-lg font-console">
         <p class="script-num">1</p>
         <p class="script-text">Hello there! I'm Thomas Nalix, a <span class="text-pink-300">{{ age }}</span>-year-old computer science student at the Montpellier's BUT. As someone who's always been fascinated by the digital world, I've found my true calling in web development.</p>

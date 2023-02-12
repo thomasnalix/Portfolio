@@ -14,7 +14,7 @@
     <div class="flex flex-col w-full gap-2 pr-4">
       <div class="flex justify-between">
         <h2 class="text-xl">{{ project.date }}</h2>
-        <a :href="project.link"><img class="w-8" src="@/assets/img/githubLogo.png" alt="github logo"></a>
+        <a :href="project.link"><img class="w-8 hover:scale-105 duration-100" src="@/assets/img/githubLogo.png" alt="github logo"></a>
       </div>
       <h1 class="font-bold text-3xl">{{ project.title }}</h1>
       <p class="break-words mb-5">{{ project.description }}</p>
