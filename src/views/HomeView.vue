@@ -20,7 +20,7 @@
         </a>
       </div>
     </div>
-    <ScriptBox title="readme.txt">
+    <ScriptBox data-aos="fade-up" title="readme.txt">
       <div class="grid code-line mt-10 text-lg font-console">
         <p class="script-num">1</p>
         <p class="script-text">Hello there! I'm Thomas Nalix, a <span class="text-pink-300">{{ age }}</span>-year-old computer science student at the Montpellier's BUT. As someone who's always been fascinated by the digital world, I've found my true calling in web development.</p>
