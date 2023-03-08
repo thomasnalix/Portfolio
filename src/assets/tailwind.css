@@ -21,10 +21,6 @@ body {
     .btn {
         @apply text-white font-bold py-2 px-4 rounded-2xl bg-[#9598bb91] backdrop-blur-lg;
     }
-    .card {
-        @apply p-3 rounded-2xl bg-slate-500 shadow-md h-full;
-        background: linear-gradient(48deg, rgb(36 59 89) 0%, rgb(60 73 93) 100%);
-    }
     .script-text {
         @apply w-full text-[#c6c8c6];
     }
@@ -36,12 +32,12 @@ body {
     }
 }
 
-.card:hover > .folder > .subfolder {
+.card:hover > div > .folder > .subfolder {
     transform: rotate(-5deg) translateX(-0.5rem);
     box-shadow: 0 0px 20px -10px rgb(0 0 0)
 }
 
-.card:hover > .folder > .cover {
+.card:hover > div > .folder > .cover {
     transform: rotate(-9deg) translateX(-1.5rem);
     box-shadow: 0 0px 20px -10px rgb(0 0 0)
 }
