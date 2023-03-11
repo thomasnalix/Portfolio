@@ -1,25 +1,49 @@
 <template>
   <NavBar />
   <template v-if="projectDesc">
-    <div class="flex flex-col gap-10 flex duration-100 sm:w-3/4 w-11/12 mx-auto">
-      <h1 class="text-6xl font-bold text-center mb-10 mt-10">{{ project.title }}</h1>
-      <ScriptBox title="metadata.txt">
-        <div class="grid code-line mt-10 text-lg break-all min-[460px]:break-normal font-console">
-          <p class="script-num">1</p>
-          <p class="script-text">Title: {{ project.title }}</p>
-          <p class="script-num">2</p>
-          <p class="script-text">Date: {{ project.date }}</p>
-          <p class="script-num">3</p>
-          <a class="script-text" :href="project.link">Link: <span class="text-blue-300">{{ project.link }}</span></a>
-          <p class="script-num">4</p>
+    <div class="flex flex-col gap-10 flex duration-100 mt-20 sm:w-3/4 w-11/12 mx-auto">
+      <div class="gap-5 relative w-full rounded-2xl p-5">
+        <div class="flex flex-col gap-5">
+          <h1 class="text-4xl font-bold text-center">{{ project.title }} - <span class="font-light">{{ project.date}}</span></h1>
+          <span class="h-[1px] w-full bg-gray-500"></span>
+          <p class="text-xl text-center">{{ project.description }}</p>
           <p></p>
-          <p class="script-num">5</p>
-          <p class="script-text">Description: {{ project.description }}</p>
+
         </div>
-      </ScriptBox>
-      <img class="w-96 rounded-xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="project image">
-      <h1 class="text-6xl font-bold text-center mb-10 mt-10">Description</h1>
-      <p>{{ projectDesc.description }}</p>
+        <div class="overflow-hidden z-[-1] bg-white opacity-20 right-0 top-0 absolute w-full h-full rounded-2xl">
+          <img class="blur-3xl saturate-[5] h-full w-full select-none" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-10 flex duration-100 mt-20 sm:w-3/4 w-11/12 mx-auto">
+      <div class="gap-5 flex flex-col relative w-full rounded-2xl p-5">
+        <h1 class="text-4xl font-bold text-center">Description</h1>
+        <span class="h-[1px] w-full bg-gray-500"></span>
+        <div class="flex flex-col gap-5">
+          <p class="text-xl text-center">{{ projectDesc.description }}</p>
+        </div>
+        <div class="overflow-hidden z-[-1] bg-white opacity-20 right-0 top-0 absolute w-full h-full rounded-2xl">
+          <img class="blur-3xl saturate-[5] h-full w-full select-none" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col gap-10 flex duration-100 mt-20 sm:w-3/4 w-11/12 mx-auto">
+      <div class="gap-5 flex flex-col relative w-full rounded-2xl p-5">
+        <h1 class="text-4xl font-bold text-center">Images</h1>
+        <span class="h-[1px] w-full bg-gray-500"></span>
+        <div class="flex flex-wrap gap-5">
+          <img class="w-56 h-56 rounded-2xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+          <img class="w-56 h-56 rounded-2xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+          <img class="w-56 h-56 rounded-2xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+          <img class="w-56 h-56 rounded-2xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+          <img class="w-56 h-56 rounded-2xl" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+        </div>
+        <div class="overflow-hidden z-[-1] bg-white opacity-20 right-0 top-0 absolute w-full h-full rounded-2xl">
+          <img class="blur-3xl saturate-[5] h-full w-full select-none" :src="require('@/assets/img/' + this.project.image + '.png')" alt="Project Image">
+        </div>
+      </div>
     </div>
   </template>
   <template v-else>
@@ -35,11 +59,10 @@
 <script>
 import NavBar from "@/components/NavBar.vue";
 import FooterBox from "@/components/FooterBox.vue";
-import ScriptBox from "@/components/ScriptBox.vue";
 
 export default {
   name: "ProjectView",
-  components: {ScriptBox, FooterBox, NavBar},
+  components: { FooterBox, NavBar},
   created() {
     this.project = this.projects.find(p => p.id === Number(this.id));
     this.projectDesc = this.projectsDesc.find(p => p.id === Number(this.id));

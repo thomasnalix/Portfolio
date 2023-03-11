@@ -3,7 +3,7 @@
     <img class="w-12 h-6" src="@/assets/img/logo.png" alt="logo">
     <div class="flex duration-100 justify-end md:gap-20 gap-4 sm:gap-10 items-center ">
       <router-link class="text-gray-300 hover:text-white" to="/">Home</router-link>
-      <router-link class="text-gray-300 hover:text-white" to="/projects">Project</router-link>
+      <router-link class="text-gray-300 hover:text-white" to="/projects">Projects</router-link>
       <router-link class="btn" to="/contact">Contact me</router-link>
     </div>
   </div>
