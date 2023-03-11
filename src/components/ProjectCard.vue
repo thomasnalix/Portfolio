@@ -47,7 +47,7 @@ export default {
   },
   data() {
     return {
-      image: require("@/assets/img/" + this.project.image + ".png"),
+      image: require("@/assets/img/" + this.project.image + "/" + this.project.image + "Cover.png"),
     }
   }
 }

@@ -3,8 +3,32 @@
         "id": 1,
         "title": "Navigator",
         "image": "navigator",
+        "images": [
+            {
+                "id": 1,
+                "name": "navigatorCover"
+            },
+            {
+                "id": 2,
+                "name": "logo"
+            }
+        ],
+        "explanation": [
+            {
+                "title": "Sujet",
+                "content": "Il est demandé de travailler sur un code existant et d'évaluer puis d'optimiser les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique. \nLe code est en PHP et la base de données utilisée est PostgreSQL. Les données géométriques SQL sont fournies au format latitude/longitude par l'IGN, qui fournit également une documentation et un descriptif de contenu. \nLes élèves ont accès aux tables noeud_commune, noeud_routier et troncon_route du schéma rletud à l'IUT en tant que SELECT. Les performances du PHP seront analysées avec xDebug, et d'autres manières de mesurer/évaluer les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique devront être trouvées. \nIl est également demandé de rajouter des fonctionnalités au site Web, de déplacer une partie de la logique du site Web côté client et d'utiliser la programmation réactive. Un journal de bord, un compte rendu sur les optimisations réalisées et un rapport final doivent être fournis. Un planning provisoire est également fourni avec des points intermédiaires et une soutenance prévue à la fin."
+            },
+            {
+                "title": "Etapes",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Techonolgie",
+                "content": "J'ai utilisé les technologies suivantes :"
+            }
+        ],
         "date": "2023",
-        "description": "Maps",
+        "description": "Navigator consiste en une application qui permet de rechercher l'itinéraire le plus court en termes de distance sur le réseau routier français. L'algorithme A* a été choisi car il est le plus adapté pour cette tâche. L'application affiche une carte montrant l'itinéraire calculé.",
         "link": "https://github.com/Jasthom/Navigator",
         "languages": [
             {
@@ -27,10 +51,42 @@
     },
     {
         "id": 2,
-        "title": "Portflolio",
+        "title": "Portfolio",
         "image": "portfolio",
+        "images": [
+            {
+                "id": 1,
+                "name": "portfolioCover"
+            },
+            {
+                "id": 2,
+                "name": "portfolioCover"
+            },
+            {
+                "id": 3,
+                "name": "portfolioCover"
+            },
+            {
+                "id": 4,
+                "name": "portfolioCover"
+            }
+        ],
+        "explanation": [
+            {
+                "title": "Sujet",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Etapes",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Techonolgie",
+                "content": "J'ai utilisé les technologies suivantes :"
+            }
+        ],
         "date": "2023",
-        "description": "Mon portfolio",
+        "description": "Il s'agit de mon portfolio codé en Vue.js. Il présente mes compétences et projets de manière interactive et visuelle, avec un design moderne et une interface réactive pour une expérience utilisateur agréable. Le code est organisé en composants réutilisables pour une maintenance facile.",
         "link": "https://github.com/Jasthom/Navigator",
         "languages": [
             {
@@ -42,9 +98,33 @@
     {
         "id": 3,
         "title": "Votee",
-        "image": "voteeCover",
+        "image": "votee",
+        "images": [
+            {
+                "id": 1,
+                "name": "voteeCover"
+            },
+            {
+                "id": 2,
+                "name": "logo"
+            }
+        ],
+        "explanation": [
+            {
+                "title": "Sujet",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Etapes",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Techonolgie",
+                "content": "J'ai utilisé les technologies suivantes :"
+            }
+        ],
         "date": "2022",
-        "description": "L’application (AgoraScript - AS) est une application web de décision collective (ou démocratie participative). Une fois déployée sur un serveur ouvert en permanence, cette application web permet de gérer un grand ensemble des questions (indépendantes les unes les autres).",
+        "description": "Votee est une application web de décision collective ou démocratie participative. Elle permet de gérer un grand ensemble de questions indépendantes les unes des autres, chacune avec des propositions créées par les utilisateurs. À la fin, un vote est organisé pour choisir la proposition gagnante.",
         "link": "https://github.com/Jasthom/Votee",
         "languages": [
             {
@@ -72,9 +152,41 @@
     {
         "id": 4,
         "title": "Cookab",
-        "image": "cookabCover",
+        "image": "cookab",
+        "images": [
+            {
+                "id": 1,
+                "name": "cookabCover"
+            },
+            {
+                "id": 2,
+                "name": "cookabCover"
+            },
+            {
+                "id": 3,
+                "name": "cookabCover"
+            },
+            {
+                "id": 4,
+                "name": "cookabCover"
+            }
+        ],
+        "explanation": [
+            {
+                "title": "Sujet",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Etapes",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Techonolgie",
+                "content": "J'ai utilisé les technologies suivantes :"
+            }
+        ],
         "date": "2022",
-        "description": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en Spring en accédant à une base de données relationnelle.",
+        "description": "Cookab est une application de création de recettes de cuisine, qui utilise une API Rest. L'utilisateur peut ajouter dynamiquement des ingrédients, puis créer une recette de cuisine personnalisée avec des étapes, des durées et des quantités spécifiques. L'interface utilisateur est simple et conviviale, permettant à l'utilisateur de naviguer facilement entre les pages et les fonctionnalités.",
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
             {
@@ -95,8 +207,40 @@
         "id": 5,
         "title": "Pert",
         "image": "pert",
+        "images": [
+            {
+                "id": 1,
+                "name": "pertCover"
+            },
+            {
+                "id": 2,
+                "name": "pertCover"
+            },
+            {
+                "id": 3,
+                "name": "pertCover"
+            },
+            {
+                "id": 4,
+                "name": "pertCover"
+            }
+        ],
+        "explanation": [
+            {
+                "title": "Sujet",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Etapes",
+                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+            },
+            {
+                "title": "Techonolgie",
+                "content": "J'ai utilisé les technologies suivantes :"
+            }
+        ],
         "date": "2022",
-        "description": "Oui c'est un projet",
+        "description": "Pert est un projet codé en Java, qui utilise l'algorithme Pert pour ordonnancer un projet. L'application permet à l'utilisateur de sauvegarder et de charger facilement les données du projet, ainsi que de visualiser l'ordonnancement détaillé du projet. Il permet de voir clairement l'ordre des tâches, leur durée et leur relation. ",
         "link": "https://github.com/Jasthom/Pert",
         "languages": [
             {

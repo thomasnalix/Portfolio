@@ -19,7 +19,7 @@ body {
 
 @layer components {
     .btn {
-        @apply text-white font-bold py-2 px-4 rounded-2xl bg-[#9598bb91] backdrop-blur-lg;
+        @apply text-white font-bold py-2 px-4 rounded-lg bg-[#9598bb91] backdrop-blur-lg;
     }
     .script-text {
         @apply w-full text-[#c6c8c6];
@@ -28,7 +28,7 @@ body {
         @apply w-3 text-[#717373] px-6 text-center;
     }
     .field {
-        @apply rounded-xl p-4 text-black
+        @apply rounded-lg w-full p-4 text-black
     }
 }
 
