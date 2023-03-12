@@ -20,9 +20,18 @@ export default {
       const discord = document.getElementById("discord");
       discord.addEventListener("mouseover", () => {
 
+        // if the tooltip already exist, remove it
+        if (document.getElementById("tooltip")) {
+          document.body.removeChild(document.getElementById("tooltip"));
+        }
+
+
+        // create the tooltip
         const tooltip = document.createElement("div");
+
         tooltip.classList.add("absolute", "bg-[#0e131e]", "text-white", "p-2", "rounded-md", "text-sm", "transform", "-translate-x-1/2");
         tooltip.innerText = "Jasthom#3502";
+        tooltip.id = "tooltip";
         tooltip.style.left = `${event.pageX}px`;
         tooltip.style.top = `${event.pageY + 10}px`;
         document.body.appendChild(tooltip);
@@ -42,10 +51,17 @@ export default {
           tooltip.classList.remove("bg-[#0e131e]");
           tooltip.classList.add("bg-green-500");
 
+          // after 3s, remove the tooltip
+          setTimeout(() => {
+            document.body.removeChild(tooltip);
+          }, 1500);
+
         });
       });
       discord.addEventListener("mouseout", () => {
-        document.body.removeChild(document.querySelector(".absolute"));
+        if (document.getElementById("tooltip")) {
+          document.body.removeChild(document.getElementById("tooltip"));
+        }
 
       });
     },
