@@ -15,7 +15,7 @@
       <div class="flex flex-col w-full gap-2">
         <div class="flex justify-between">
           <h2 class="text-xl">{{ project.date }}</h2>
-          <a :href="project.link"><img class="w-8 hover:scale-105 duration-100" src="@/assets/img/githubLogo.png" alt="github logo"></a>
+          <a v-if="project.link" :href="project.link"><img class="w-8 hover:scale-105 duration-100" src="@/assets/img/githubLogo.png" alt="github logo"></a>
         </div>
         <router-link :to="`/projects/${project.id}`">
         <h1 class="font-bold text-3xl">{{ project.title }}</h1>

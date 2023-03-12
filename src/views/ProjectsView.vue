@@ -1,6 +1,6 @@
 <template>
   <NavBar />
-  <h1 class="text-6xl font-bold text-center mb-10 mt-10">Projects</h1>
+  <h1 class="text-6xl font-bold text-center mb-10 mt-10">Projets</h1>
   <div class="w-3/4 mx-auto" v-if="projects.length">
     <div class="flex flex-col gap-10" >
       <ProjectCard v-wave="{

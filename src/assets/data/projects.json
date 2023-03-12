@@ -21,7 +21,6 @@
         ],
         "date": "2023",
         "description": "Navigator consiste en une application qui permet de rechercher l'itinéraire le plus court en termes de distance sur le réseau routier français. L'algorithme A* a été choisi car il est le plus adapté pour cette tâche. L'application affiche une carte montrant l'itinéraire calculé.",
-        "link": "https://github.com/Jasthom/Navigator",
         "languages": [
             {
                 "name": "PHP",

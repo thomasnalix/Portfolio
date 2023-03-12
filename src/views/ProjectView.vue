@@ -4,7 +4,6 @@
     <BoxShader data-aos="fade-up" :project="project" :title="project.title" :complement="project.date">
       <div>
         <p class="text-lg">{{ project.description }}</p>
-        <a :href="project.link"><img class="w-8 hover:scale-105 duration-100" src="@/assets/img/githubLogo.png" alt="github logo"></a>
       </div>
     </BoxShader>
 
