@@ -20,7 +20,7 @@
 
     <BoxShader data-aos="fade-up" :project="project" title="Images">
       <div class="flex flex-wrap gap-5">
-        <img class="max-w-xs rounded-2xl hover:scale-105 duration-200" v-for="img in project.images" :key="img.id" :src="require('@/assets/img/' + this.project.image + '/' + img.name + '.png')" alt="Project Image">
+        <img class="sm:max-w-xs rounded-2xl hover:scale-105 duration-200" v-for="img in project.images" :key="img.id" :src="require('@/assets/img/' + this.project.image + '/' + img.name + '.png')" alt="Project Image">
       </div>
     </BoxShader>
   </template>

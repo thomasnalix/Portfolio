@@ -17,14 +17,6 @@
             {
                 "title": "Sujet",
                 "content": "Il est demandé de travailler sur un code existant et d'évaluer puis d'optimiser les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique. \nLe code est en PHP et la base de données utilisée est PostgreSQL. Les données géométriques SQL sont fournies au format latitude/longitude par l'IGN, qui fournit également une documentation et un descriptif de contenu. \nLes élèves ont accès aux tables noeud_commune, noeud_routier et troncon_route du schéma rletud à l'IUT en tant que SELECT. Les performances du PHP seront analysées avec xDebug, et d'autres manières de mesurer/évaluer les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique devront être trouvées. \nIl est également demandé de rajouter des fonctionnalités au site Web, de déplacer une partie de la logique du site Web côté client et d'utiliser la programmation réactive. Un journal de bord, un compte rendu sur les optimisations réalisées et un rapport final doivent être fournis. Un planning provisoire est également fourni avec des points intermédiaires et une soutenance prévue à la fin."
-            },
-            {
-                "title": "Etapes",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
-                "title": "Techonolgie",
-                "content": "J'ai utilisé les technologies suivantes :"
             }
         ],
         "date": "2023",

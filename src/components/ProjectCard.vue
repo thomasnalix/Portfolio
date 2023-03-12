@@ -17,13 +17,14 @@
           <h2 class="text-xl">{{ project.date }}</h2>
           <a :href="project.link"><img class="w-8 hover:scale-105 duration-100" src="@/assets/img/githubLogo.png" alt="github logo"></a>
         </div>
+        <router-link :to="`/projects/${project.id}`">
         <h1 class="font-bold text-3xl">{{ project.title }}</h1>
         <p class="break-words mb-5">{{ project.description }}</p>
+        </router-link>
         <div class="flex justify-between md:flex-row md:gap-2 gap-5 flex-col items-center">
-          <div class="flex flex-wrap justify-center md:justify-start gap-2 w-full">
+          <div class="flex flex-wrap justify-center md:justify-start gap-2">
             <LanguageCard v-for="language in project.languages" :key="language.name" :language="language" />
           </div>
-          <router-link :to="`/projects/${project.id}`" class="btn">More</router-link>
         </div>
       </div>
     </div>
