@@ -8,7 +8,7 @@
     </BoxShader>
     <BoxShader data-aos="fade-up" :project="project" title="Description">
       <!-- TODO : Add id in json for every child of explanation-->
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-col gap-10">
         <div v-for="desc in project.explanation" :key="desc.length" class="flex flex-col gap-2 markdown">
           <h1 class="text-2xl font-bold">{{ desc.title }} :</h1>
           <p v-html="compiledMarkdown(desc.content)" class="text-lg font-normal"></p>

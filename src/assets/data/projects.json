@@ -17,6 +17,14 @@
             {
                 "title": "Sujet",
                 "content": "Il est demandé de travailler sur un code existant et d'évaluer puis d'optimiser les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique. \nLe code est en PHP et la base de données utilisée est PostgreSQL. Les données géométriques SQL sont fournies au format latitude/longitude par l'IGN, qui fournit également une documentation et un descriptif de contenu. \nLes élèves ont accès aux tables *noeud_commune*, *noeud_routier* et *troncon_route* du schéma *rletud* à l'IUT en tant que `SELECT`. \n\nLes performances du PHP seront analysées avec xDebug, et d'autres manières de mesurer/évaluer les performances tel que : \n- La qualité logicielle, \n- L'ergonomie,\n- La sécurité \n- Le bilan écologique devront être trouvées. \n\nIl est également demandé de rajouter des fonctionnalités au site Web, de déplacer une partie de la logique du site Web côté client et d'utiliser la programmation réactive. Un journal de bord, un compte rendu sur les optimisations réalisées et un rapport final doivent être fournis. Un planning provisoire est également fourni avec des points intermédiaires et une soutenance prévue à la fin."
+            },
+            {
+                "title": "Étapes",
+                "content": "Notre premère mission a été d'optimiser l'algorithme qui calcul le plus court chemin. Pour cela, nous avons suivi plusieurs étapes : \n 1. Optimisation de la requête d'accès à la base de donnée. \n 2. Ajout d'une vue matérialisée faisant les calculs au préalable des noeud adjacents. \n3. Modification de l'agorithme côté PHP pour diminuer le nombre de requête serveur en utilisant un système de cache par département. \n 4. Changement vers un algorithme plus optimisé (A*). \n5. Structuration des données avec un BST. \n6. Changement d'architecture de la vue divisant par 2 le nombre de ligne (1 600 000).\n\n Toutes ces modifications nous ont permis d'atteindre une grande rapidité de traitement. Nous sommes passé de 30s pour 0.03 kilomètre à 15s pour 1301.83 kilomètre (Plus grande distance de france)."
+            },
+            {
+                "title": "Évolution",
+                "content": "Nous avons décidé d'ajouter des options non demandés tel que l'ajout d'itinéraire supplémentaire permettant de calculer de manière extrêmement rapide la distance la plus courte et l'itinéraire entre maximum 6 villes de france. \n L'itinéraire est affiché sur une map (voir image)."
             }
         ],
         "date": "2023",
@@ -47,18 +55,6 @@
         "images": [
             {
                 "id": 1,
-                "name": "portfolioCover"
-            },
-            {
-                "id": 2,
-                "name": "portfolioCover"
-            },
-            {
-                "id": 3,
-                "name": "portfolioCover"
-            },
-            {
-                "id": 4,
                 "name": "portfolioCover"
             }
         ],
@@ -100,6 +96,10 @@
             {
                 "title": "Techonolgie",
                 "content": "Pour ce projet, nous avons utilisé uniquement le langage PHP avec une structure MVC. La base de donnée est Oracle."
+            },
+            {
+                "title": "Évolution",
+                "content": "Nous avons décidé d'ajouter des extensions tel que : \n- L'ajout de commentaire via un rôle supplémentaire (spécialiste), \n- Lors de l'édition des sections, nous avons ajouté l'intégration du markdown, \n - Fusion de propositions, \n - Ajout d'un système de notifications, \n- Recherche par mots-clés, \n - Gestion des groupes, \n - Gestion des demandes, \n - Historique des questions et des demandes."
             }
         ],
         "date": "2022",
@@ -136,18 +136,6 @@
             {
                 "id": 1,
                 "name": "cookabCover"
-            },
-            {
-                "id": 2,
-                "name": "cookabCover"
-            },
-            {
-                "id": 3,
-                "name": "cookabCover"
-            },
-            {
-                "id": 4,
-                "name": "cookabCover"
             }
         ],
         "explanation": [
@@ -181,18 +169,6 @@
         "images": [
             {
                 "id": 1,
-                "name": "pertCover"
-            },
-            {
-                "id": 2,
-                "name": "pertCover"
-            },
-            {
-                "id": 3,
-                "name": "pertCover"
-            },
-            {
-                "id": 4,
                 "name": "pertCover"
             }
         ],
