@@ -3,16 +3,15 @@
   <template v-if="project">
     <BoxShader data-aos="fade-up" :project="project" :title="project.title" :complement="project.date">
       <div>
-        <p class="text-lg">{{ project.description }}</p>
+        <p class="text-lg font-normal">{{ project.description }}</p>
       </div>
     </BoxShader>
-
     <BoxShader data-aos="fade-up" :project="project" title="Description">
       <!-- TODO : Add id in json for every child of explanation-->
       <div class="flex flex-col gap-6">
-        <div v-for="desc in project.explanation" :key="desc.length" class="flex flex-col gap-2">
+        <div v-for="desc in project.explanation" :key="desc.length" class="flex flex-col gap-2 markdown">
           <h1 class="text-2xl font-bold">{{ desc.title }} :</h1>
-          <p class="text-lg whitespace-pre-wrap ">{{ desc.content }}</p>
+          <p v-html="compiledMarkdown(desc.content)" class="text-lg font-normal"></p>
         </div>
       </div>
     </BoxShader>
@@ -36,6 +35,7 @@
 import NavBar from "@/components/NavBar.vue";
 import FooterBox from "@/components/FooterBox.vue";
 import BoxShader from "@/components/BoxShader.vue";
+import {marked} from 'marked';
 
 export default {
   name: "ProjectView",
@@ -47,8 +47,14 @@ export default {
     return {
       projects: require("@/assets/data/projects.json"),
       id: this.$route.params.id,
+
       project: {},
     };
+  },
+  methods: {
+    compiledMarkdown(content) {
+      return marked(content);
+    }
   }
 }
 </script>
