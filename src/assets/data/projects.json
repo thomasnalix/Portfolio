@@ -64,16 +64,8 @@
         ],
         "explanation": [
             {
-                "title": "Sujet",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
-                "title": "Etapes",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
                 "title": "Techonolgie",
-                "content": "J'ai utilisé les technologies suivantes :"
+                "content": "J'ai choisi d'utiliser Vue.js comme framwork pour le portfolio pour plusieurs raisons.\n Tout d'abord, il est très récent et très apprécié de la communauté. Il est également très léger en comparaison à des framework que j'ai pu utiliser tel qu'Angular."
             }
         ],
         "date": "2023",
@@ -103,15 +95,11 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
-                "title": "Etapes",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+                "content": "Le principe de Votee est le suivant :\n1. L'administrateur de l'application désigne l'organisateur d'une nouvelle consultation.\n2. Un organisateur lance une consultation en posant une nouvelle question sur l'application. Il précise le plan du texte attendu pour la réponse. Il désigne l’ensemble des responsables de proposition qui vont écrire des propositions (réponses) concurrentes. Il précise le calendrier : dates de début et de fin de l’écriture des propositions, dates de début et de fin du vote. Il désigne enfin l’ensemble des votants qui vont pouvoir arbitrer entre les propositions. \n3. Chaque responsable de proposition inscrit des co-auteurs. Les co-auteurs rédigent un texte de proposition qui est une réponse possible à la question. Il y a donc plusieurs textes écrits en concurrence par des groupes d’auteurs différents. \n4. Les votants font un choix entre les différentes propositions."
             },
             {
                 "title": "Techonolgie",
-                "content": "J'ai utilisé les technologies suivantes :"
+                "content": "Pour ce projet, nous avons utilisé uniquement le langage PHP avec une structure MVC. La base de donnée est Oracle."
             }
         ],
         "date": "2022",
@@ -165,15 +153,7 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
-                "title": "Etapes",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
-            },
-            {
-                "title": "Techonolgie",
-                "content": "J'ai utilisé les technologies suivantes :"
+                "content": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher, modifier, supprimer, créer des ingrédients et des recettes de cuisine récupérés par un backend développé en Java 17 / Spring en accédant à une base de données mySql."
             }
         ],
         "date": "2022",
