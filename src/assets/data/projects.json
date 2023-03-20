@@ -94,7 +94,7 @@
                 "content": "Le principe de **Votee** est le suivant :\n1. L'administrateur de l'application désigne l'organisateur d'une nouvelle consultation.\n2. Un organisateur lance une consultation en posant une nouvelle question sur l'application. Il précise le plan du texte attendu pour la réponse. Il désigne l’ensemble des responsables de proposition qui vont écrire des propositions (réponses) concurrentes. Il précise le calendrier : dates de début et de fin de l’écriture des propositions, dates de début et de fin du vote. Il désigne enfin l’ensemble des votants qui vont pouvoir arbitrer entre les propositions. \n3. Chaque responsable de proposition inscrit des co-auteurs. Les co-auteurs rédigent un texte de proposition qui est une réponse possible à la question. Il y a donc plusieurs textes écrits en concurrence par des groupes d’auteurs différents. \n4. Les votants font un choix entre les différentes propositions."
             },
             {
-                "title": "Techonolgie",
+                "title": "Technologie",
                 "content": "Pour ce projet, nous avons utilisé uniquement le langage PHP avec une structure MVC. La base de donnée est Oracle."
             },
             {
@@ -141,7 +141,19 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "Le but est de proposer un projet qui respecte les principes web modernes avec une API Rest. Ce projet permettra, au travers d'une interface graphique développée en TypeScript / Angular, d'afficher, modifier, supprimer, créer des ingrédients et des recettes de cuisine récupérés par un backend développé en Java 17 / Spring en accédant à une base de données mySql."
+                "content": "Le but est de proposer un projet qui respecte les principes web modernes avec une **API Rest**. Ce projet permettra, au travers d'une interface graphique développée en **TypeScript / Angular**, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en **Java 17 / Spring** en accédant à une base de données mySql."
+            },
+            {
+                "title": "Technologie",
+                "content": "Pour ce projet, nous avons utilisé le langage Java avec le framework **Spring**. La base de donnée est **Mysql**. L'interface graphique est développée en **Angular**. Pour le design, nous avons utilisé le site **figma**."
+            },
+            {
+                "title": "Évolution",
+                "content": "Nous avons décidé d'ajouter des fonctions supplémentaire tel que : \n- L'ajout dynamique d'ingrédient et de recettes, \n- La suppression avec des modale de confirmations, \n - La modification, \n - La recherche par mots-clés et par catégorie d'ingrédient et de recette, \n - La gestion des images en base64"
+            },
+            {
+                "title": "Difficultés",
+                "content": "La difficulté principale était d'apprendre en peut de temps les framework **Angular** et **Spring**. Cependant, nous avons été suivi par un professeur qui nous a aidé à comprendre les bases de ces technologies."
             }
         ],
         "date": "2022",

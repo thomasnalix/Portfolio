@@ -47,7 +47,6 @@ export default {
     return {
       projects: require("@/assets/data/projects.json"),
       id: this.$route.params.id,
-
       project: {},
     };
   },
