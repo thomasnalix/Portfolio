@@ -16,19 +16,19 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "Il est demandé de travailler sur un code existant et d'évaluer puis d'optimiser les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique. \nLe code est en PHP et la base de données utilisée est PostgreSQL. Les données géométriques SQL sont fournies au format latitude/longitude par l'IGN, qui fournit également une documentation et un descriptif de contenu. \nLes élèves ont accès aux tables *noeud_commune*, *noeud_routier* et *troncon_route* du schéma *rletud* à l'IUT en tant que `SELECT`. \n\nLes performances du PHP seront analysées avec xDebug, et d'autres manières de mesurer/évaluer les performances tel que : \n- La qualité logicielle, \n- L'ergonomie,\n- La sécurité \n- Le bilan écologique devront être trouvées. \n\nIl est également demandé de rajouter des fonctionnalités au site Web, de déplacer une partie de la logique du site Web côté client et d'utiliser la programmation réactive. Un journal de bord, un compte rendu sur les optimisations réalisées et un rapport final doivent être fournis. Un planning provisoire est également fourni avec des points intermédiaires et une soutenance prévue à la fin."
+                "content": "Il est demandé de travailler sur un code existant et d'évaluer puis d'optimiser les performances, la qualité logicielle, l'ergonomie, la sécurité et le bilan écologique. \nLe code est en PHP et la base de données utilisée est PostgreSQL. Les données géométriques SQL sont fournies au format latitude/longitude par l'IGN, qui fournit également une documentation et un descriptif de contenu. \nLes élèves ont accès aux tables *noeud_commune*, *noeud_routier* et *troncon_route* du schéma *rletud* à l'IUT en tant que `SELECT`. \n\nLes performances du PHP seront analysées avec xDebug, et d'autres manières de mesurer/évaluer les performances telles que : \n- La qualité logicielle, \n- L'ergonomie,\n- La sécurité \n- Le bilan écologique. \n\nIl est également demandé de rajouter des fonctionnalités au site Web, de déplacer une partie de la logique du site Web côté client et d'utiliser la programmation réactive. Un journal de bord, un compte-rendu sur les optimisations réalisées et un rapport final doivent être fournis. Un planning provisoire est également fourni avec des points intermédiaires et une soutenance prévue à la fin."
             },
             {
                 "title": "Étapes",
-                "content": "Notre premère mission a été d'optimiser l'algorithme qui calcul le plus court chemin. Pour cela, nous avons suivi plusieurs étapes : \n 1. Optimisation de la requête d'accès à la base de donnée. \n 2. Ajout d'une vue matérialisée faisant les calculs au préalable des noeud adjacents. \n3. Modification de l'agorithme côté PHP pour diminuer le nombre de requête serveur en utilisant un système de cache par département. \n 4. Changement vers un algorithme plus optimisé (A*). \n5. Structuration des données avec un BST. \n6. Changement d'architecture de la vue divisant par 2 le nombre de ligne (1 600 000).\n\n Toutes ces modifications nous ont permis d'atteindre une grande rapidité de traitement. Nous sommes passé de 30s pour 0.03 kilomètre à 15s pour 1301.83 kilomètre (Plus grande distance de france)."
+                "content": "Notre première  mission a été d'optimiser l'algorithme qui calcul le plus court chemin. Pour cela, nous avons suivi plusieurs étapes : \n 1. Optimisation de la requête d'accès à la base de données. \n 2. Ajout d'une vue matérialisée faisant les calculs au préalable des nœuds adjacents. \n3. Modification de l'algorithme côté PHP pour diminuer le nombre de requête serveur en utilisant un système de cache par département. \n 4. Changement vers un algorithme plus optimisé (A*). \n5. Structuration des données avec un BST. \n6. Changement d'architecture de la vue divisant par 2 le nombre de ligne (1 600 000).\n\n Toutes ces modifications nous ont permis d'atteindre une grande rapidité de traitement. Nous sommes passés de 30s pour 0.03 kilomètre à 9s pour 1301.83 kilomètre (Plus grande distance de France)."
             },
             {
                 "title": "Évolution",
-                "content": "Nous avons décidé d'ajouter des options non demandés tel que l'ajout d'itinéraire supplémentaire permettant de calculer de manière extrêmement rapide la distance la plus courte et l'itinéraire entre maximum 6 villes de france. \n L'itinéraire est affiché sur une map (voir image)."
+                "content": "Nous avons décidé d'ajouter des options non demandées telles que l'ajout d'itinéraire supplémentaire permettant de calculer de manière extrêmement rapide la distance la plus courte et l'itinéraire entre maxima  6 villes de France. \n L'itinéraire est affiché sur une map (voir image)."
             }
         ],
         "date": "2023",
-        "description": "Navigator consiste en une application qui permet de rechercher l'itinéraire le plus court en termes de distance sur le réseau routier français. L'algorithme A* a été choisi car il est le plus adapté pour cette tâche. L'application affiche une carte montrant l'itinéraire calculé.",
+        "description": "Navigator consiste en une application qui permet de rechercher l'itinéraire le plus court en termes de distance sur le réseau routier français. L'algorithme A* a été choisi, car il est le plus adapté pour cette tâche. L'application affiche une carte montrant l'itinéraire calculé.",
         "languages": [
             {
                 "name": "PHP",
@@ -43,8 +43,8 @@
                 "link": "https://en.wikipedia.org/wiki/JavaScript"
             },
             {
-                "name": "Postgree",
-                "link": ""
+                "name": "PostgreSQL",
+                "link": "https://www.postgresql.org/"
             }
         ]
     },
@@ -61,7 +61,15 @@
         "explanation": [
             {
                 "title": "Techonolgie",
-                "content": "J'ai choisi d'utiliser Vue.js comme framwork pour le portfolio pour plusieurs raisons.\n Tout d'abord, il est très récent et très apprécié de la communauté. Il est également très léger en comparaison à des framework que j'ai pu utiliser tel qu'Angular."
+                "content": "J'ai choisi d'utiliser **Vue.js** comme framework pour le portfolio pour plusieurs raisons.\n Tout d'abord, il est très récent et très apprécié de la communauté. Il est également très léger en comparaison à des framework que j'ai pu utiliser tel qu'Angular."
+            },
+            {
+                "title": "Design",
+                "content": "J'ai choisi un design simple et moderne sur un thème sombre. Cette première version du portfolio ne possède pas de nombreuses animation telle que des scroll animation, des particules, etc. \n Ainsi, pour le moment, c'est une première version simpliste, que j'améliorerais au fur et à mesure du temps."
+            },
+            {
+                "title": "Difficultés",
+                "content" : "Vue.js est un outil que je n'avais encore jamais utilisé. J'ai donc dû faire face à quelques problèmes lors du build du projet, mais également dans l'implémentation de certaines options.\n Cependant, j'ai déjà pu utiliser des technologies similaires ce qui m'a grandement aidé."
             }
         ],
         "date": "2023",
@@ -70,7 +78,7 @@
         "languages": [
             {
                 "name": "Vue.js",
-                "link": ""
+                "link": "https://vuejs.org/"
             }
         ]
     },
@@ -141,19 +149,19 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "Le but est de proposer un projet qui respecte les principes web modernes avec une **API Rest**. Ce projet permettra, au travers d'une interface graphique développée en **TypeScript / Angular**, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en **Java 17 / Spring** en accédant à une base de données mySql."
+                "content": "Le but est de proposer un projet qui respecte les principes web moderne avec une **API Rest**. Ce projet permettra, au travers d'une interface graphique développée en **TypeScript / Angular**, d'afficher des ingrédients et des recettes de cuisine récupérés par un backend développé en **Java 17 / Spring** en accédant à une base de données mySql."
             },
             {
                 "title": "Technologie",
-                "content": "Pour ce projet, nous avons utilisé le langage Java avec le framework **Spring**. La base de donnée est **Mysql**. L'interface graphique est développée en **Angular**. Pour le design, nous avons utilisé le site **figma**."
+                "content": "Pour ce projet, nous avons utilisé le langage Java avec le framework **Spring**. La base de données est **Mysql**. L'interface graphique est développée en **Angular**. Pour le design, nous avons utilisé le site **figma**."
             },
             {
                 "title": "Évolution",
-                "content": "Nous avons décidé d'ajouter des fonctions supplémentaire tel que : \n- L'ajout dynamique d'ingrédient et de recettes, \n- La suppression avec des modale de confirmations, \n - La modification, \n - La recherche par mots-clés et par catégorie d'ingrédient et de recette, \n - La gestion des images en base64"
+                "content": "Nous avons décidé d'ajouter des fonctions supplémentaires telles que : \n- L'ajout dynamique d'ingrédient et de recettes, \n- La suppression avec des modals de confirmations, \n - La modification, \n - La recherche par mots-clés et par catégorie d'ingrédient et de recette, \n - La gestion des images en base64"
             },
             {
                 "title": "Difficultés",
-                "content": "La difficulté principale était d'apprendre en peut de temps les framework **Angular** et **Spring**. Cependant, nous avons été suivi par un professeur qui nous a aidé à comprendre les bases de ces technologies."
+                "content": "La difficulté principale était d'apprendre en peu de temps les framework **Angular** et **Spring**. Cependant, nous avons été suivis par un professeur qui nous a aidés à comprendre les bases de ces technologies."
             }
         ],
         "date": "2022",
@@ -187,15 +195,15 @@
         "explanation": [
             {
                 "title": "Sujet",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+                "content": "Le but est de créer un logiciel en ligne de commande en java, sans interface graphique, qui permet de créer un projet en lui affectant des coût et des dates. La suite est ensuite de pouvoir **ordonnancer** le projet qui va afficher les différentes tâches à faire en suivant l'algorithme Pert.\nLes besoins à couvrir sont les suivants :\n - La date au plus tard de chaque tâche,\n - La date au plus tôt de chaque tâche, \n - La date au plus tôt de fin de projet, \n- La date au plus tard de fin de projet,\n - Les tâches critiques, \n - La présence de circuit dans un graphe.\n\nIl est également proposé d'ajouter une gestion des sauvegardes et ainsi de pouvoir charger un projet."
             },
             {
                 "title": "Etapes",
-                "content": "J'ai réalisé un site web pour un client fictif qui est un photographe."
+                "content": "Le développement du logiciel s'est fait en **TDD**. Ainsi, nous avons réalisé de très nombreux jeux de test, puis développé les différentes fonctions.\n Étant dans une organisation en méthode agile, il y a eu 3 sprints avec des réunions régulières."
             },
             {
-                "title": "Techonolgie",
-                "content": "J'ai utilisé les technologies suivantes :"
+                "title": "Difficultés",
+                "content": "Ce projet a été assez complexe à réaliser notamment par la faible connaissance de java que nous avions à ce moment-là. Cependant, nous avons réalisé l'ensemble du cahier des charges avec succès.\nLa principale difficulté aura été de déterminer les tâches critiques du projet."
             }
         ],
         "date": "2022",
