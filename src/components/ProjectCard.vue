@@ -1,5 +1,5 @@
 <template>
-  <div class="card p-3 rounded-2xl flex items-center shadow-md h-full duration-30 md:h-72 h-full lg:ml-8 shadow-2xl">
+  <router-link :to="`/projects/${project.id}`" class="card p-3 rounded-2xl flex items-center shadow-md h-full duration-30 md:h-72 h-full lg:ml-8 shadow-2xl">
     <div class="flex z-10 w-full items-center pr-4">
       <div class="folder hidden lg:block relative right-10 w-72 h-52">
         <div class="absolute overflow-hidden duration-300 w-52 h-52 opacity-50 rounded-2xl">
@@ -23,14 +23,13 @@
           <div class="flex flex-wrap justify-center md:justify-start gap-2">
             <LanguageCard v-for="language in project.languages" :key="language.name" :language="language" />
           </div>
-          <router-link class="btn" :to="`/projects/${project.id}`">Voir plus</router-link>
         </div>
       </div>
     </div>
     <div class="overflow-hidden bg-white opacity-5 right-0 top-0 absolute w-full h-full rounded-2xl">
       <img class="blur-3xl saturate-[5] h-full w-full select-none" :src="image" alt="Project Image">
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

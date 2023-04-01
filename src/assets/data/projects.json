@@ -31,20 +31,16 @@
         "description": "Navigator consiste en une application qui permet de rechercher l'itinéraire le plus court en termes de distance sur le réseau routier français. L'algorithme A* a été choisi, car il est le plus adapté pour cette tâche. L'application affiche une carte montrant l'itinéraire calculé.",
         "languages": [
             {
-                "name": "PHP",
-                "link": "https://en.wikipedia.org/wiki/PHP"
+                "name": "PHP"
             },
             {
-                "name": "HTML",
-                "link": "https://en.wikipedia.org/wiki/HTML"
+                "name": "HTML"
             },
             {
-                "name": "JavaScript",
-                "link": "https://en.wikipedia.org/wiki/JavaScript"
+                "name": "JavaScript"
             },
             {
-                "name": "PostgreSQL",
-                "link": "https://www.postgresql.org/"
+                "name": "PostgreSQL"
             }
         ]
     },
@@ -77,8 +73,7 @@
         "link": "https://github.com/Jasthom/Navigator",
         "languages": [
             {
-                "name": "Vue.js",
-                "link": "https://vuejs.org/"
+                "name": "Vue.js"
             }
         ]
     },
@@ -115,24 +110,19 @@
         "link": "https://github.com/Jasthom/Votee",
         "languages": [
             {
-                "name": "PHP",
-                "link": "https://en.wikipedia.org/wiki/PHP"
+                "name": "PHP"
             },
             {
-                "name": "HTML",
-                "link": "https://en.wikipedia.org/wiki/HTML"
+                "name": "HTML"
             },
             {
-                "name": "Tailwind",
-                "link": "https://tailwindcss.com/"
+                "name": "Tailwind"
             },
             {
-                "name": "JavaScript",
-                "link": "https://en.wikipedia.org/wiki/JavaScript"
+                "name": "JavaScript"
             },
             {
-                "name": "Isql+",
-                "link": "https://www.oracle.com/database/"
+                "name": "Isql+"
             }
         ]
     },
@@ -169,16 +159,13 @@
         "link": "https://github.com/Jasthom/Cookab",
         "languages": [
             {
-                "name": "Angular",
-                "link": "https://angular.io/"
+                "name": "Angular"
             },
             {
-                "name": "Spring",
-                "link": "https://spring.io/"
+                "name": "Spring"
             },
             {
-                "name": "Mysql",
-                "link": "https://www.mysql.com/"
+                "name": "Mysql"
             }
         ]
     },
@@ -211,8 +198,7 @@
         "link": "https://github.com/Jasthom/Pert",
         "languages": [
             {
-                "name": "Java",
-                "link": "https://en.wikipedia.org/wiki/Java_(programming_language)"
+                "name": "Java"
             }
         ]
     }
